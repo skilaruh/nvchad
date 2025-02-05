@@ -1,11 +1,9 @@
-**My personal nvchad config** 
+# My Personal NvChad Config
 
-- Installation: 
-1. run `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim`
-2. Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins.
+## Installation
 
+1. Run:
+   `git clone https://github.com/NvChad/starter ~/.config/nvim && nvim`
 
-- Uninstallation: 
-   `rm -rf ~/.config/nvim
-    rm -rf ~/.local/state/nvim
-    rm -rf ~/.local/share/nvim`
+2. After lazy.nvim finishes downloading plugins, run this command in Neovim:
+   `:MasonInstallAll`
