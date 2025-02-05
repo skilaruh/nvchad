@@ -1,4 +1,4 @@
-# My Personal NvChad Config
+# Personal NvChad Config
 
 ## Installation
 
