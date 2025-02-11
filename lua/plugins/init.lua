@@ -5,7 +5,6 @@ return {
         opts = require("configs.conform"),
     },
 
-    -- These are some examples, uncomment them if you want to see them work!
     {
         "neovim/nvim-lspconfig",
         config = function()
@@ -17,13 +16,15 @@ return {
         "nvim-treesitter/nvim-treesitter",
         opts = require("configs.treesitter"),
     },
-    -- {
-    -- 	"nvim-treesitter/nvim-treesitter",
-    -- 	opts = {
-    -- 		ensure_installed = {
-    -- 			"vim", "lua", "vimdoc",
-    --      "html", "css"
-    -- 		},
-    -- 	},
-    -- },
+
+    {
+        "quarto-dev/quarto-nvim",
+        ft = { "quarto" },
+        dev = false,
+        dependencies = {
+            "jmbuhr/otter.nvim",
+            "nvim-treesitter/nvim-treesitter",
+        },
+        opts = require("configs.quarto"),
+    },
 }
