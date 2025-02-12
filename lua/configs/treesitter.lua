@@ -21,6 +21,7 @@ local options = {
         "ninja",
         "python",
         "rust",
+        "r",
         "sql",
         "toml",
         "typescript",
