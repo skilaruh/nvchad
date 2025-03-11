@@ -9,6 +9,7 @@ local options = {
         "csv",
         "cuda",
         "dockerfile",
+        "fish",
         "html",
         "javascript",
         "latex",
