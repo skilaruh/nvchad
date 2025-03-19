@@ -10,6 +10,7 @@ local options = {
         "cuda",
         "dockerfile",
         "fish",
+        "go",
         "html",
         "javascript",
         "latex",
