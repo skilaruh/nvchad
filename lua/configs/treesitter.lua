@@ -4,6 +4,7 @@ local options = {
         "bash",
         "bibtex",
         "c",
+        "cmake",
         "cpp",
         "css",
         "csv",
