@@ -27,4 +27,9 @@ return {
         },
         opts = require("configs.quarto"),
     },
+
+    {
+        "folke/which-key.nvim",
+        lazy = false,
+    },
 }
