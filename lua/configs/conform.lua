@@ -1,9 +1,10 @@
 local options = {
     formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "ruff_format" },
         c = { "clang-format" },
         cpp = { "clang-format" },
+        go = { "gofumpt", "goimports-reviser", "golines" },
+        lua = { "stylua" },
+        python = { "ruff_format" },
         -- css = { "prettier" },
         -- html = { "prettier" },
     },
@@ -20,6 +21,9 @@ local options = {
                         IndentAccessModifiers: true, \
                         PackConstructorInitializers: Never}",
             },
+        },
+        ["golines"] = {
+            prepend_args = { "--max-len=80" },
         },
     },
 
