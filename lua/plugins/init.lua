@@ -18,17 +18,6 @@ return {
     },
 
     {
-        "quarto-dev/quarto-nvim",
-        ft = { "quarto" },
-        dev = false,
-        dependencies = {
-            "jmbuhr/otter.nvim",
-            "nvim-treesitter/nvim-treesitter",
-        },
-        opts = require("configs.quarto"),
-    },
-
-    {
         "folke/which-key.nvim",
         lazy = false,
     },
