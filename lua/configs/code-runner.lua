@@ -3,6 +3,7 @@ local options = {
         python = "python -u $dir/$fileName",
         c = "cd $dir && clang -pedantic-errors -Wall -Wextra -std=c23 -o $fileNameWithoutExt *.c && $dir/$fileNameWithoutExt",
         cpp = "cd $dir && clang++ -pedantic-errors -Wall -Wextra -std=c++23 -o $fileNameWithoutExt *.c && $dir/$fileNameWithoutExt",
+        go = "go run $dir/$fileName",
     },
 }
 
