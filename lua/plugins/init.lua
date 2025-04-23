@@ -21,10 +21,4 @@ return {
         "folke/which-key.nvim",
         lazy = false,
     },
-
-    {
-        "CRAG666/code_runner.nvim",
-        opts = require("configs.code-runner"),
-        lazy = false,
-    },
 }
