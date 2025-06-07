@@ -5,7 +5,7 @@ local runners = {
     c = "cd %dir && clang -pedantic-errors -Wall -Wextra -std=c23 -o %fileNameWithoutExt *.c && %dir/%fileNameWithoutExt",
     cpp = "cd %dir && clang++ -pedantic-errors -Wall -Wextra -std=c++23 -o %fileNameWithoutExt *.cpp && %dir/%fileNameWithoutExt",
     go = "go run %filename",
-    python = "python -u %filename",
+    python = "python3 -u %filename",
 }
 
 -- Function to find terminal buffer by checking if it's a terminal buffer

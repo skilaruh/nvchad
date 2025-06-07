@@ -13,15 +13,21 @@ local options = {
         -- C & C++
         ["clang-format"] = {
             prepend_args = {
-                "-style={ \
-                        IndentWidth: 4, \
-                        TabWidth: 4, \
-                        UseTab: Never, \
-                        AccessModifierOffset: 0, \
-                        IndentAccessModifiers: true, \
-                        PackConstructorInitializers: Never}",
+                "-style={"
+                    .. "BasedOnStyle: LLVM, "
+                    .. "IndentWidth: 4, "
+                    .. "TabWidth: 4, "
+                    .. "UseTab: Never, "
+                    .. "InsertNewlineAtEOF: true, "
+                    .. "KeepEmptyLines: {"
+                    .. "AtEndOfFile: true, "
+                    .. "AtStartOfBlock: false, "
+                    .. "AtStartOfFile: false"
+                    .. "}"
+                    .. "}",
             },
         },
+        -- Go
         ["golines"] = {
             prepend_args = { "--max-len=80" },
         },
