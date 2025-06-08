@@ -23,4 +23,11 @@ return {
         "folke/which-key.nvim",
         event = VeryLazy,
     },
+
+    {
+        "nvim-tree/nvim-tree.lua",
+        opts = function()
+            return require("configs.nvimtree")
+        end,
+    },
 }
