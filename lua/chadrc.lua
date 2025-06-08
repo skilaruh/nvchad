@@ -26,4 +26,7 @@ M.ui = {
     },
 }
 
+M.term = {
+    sizes = { sp = 0.2 },
+}
 return M
