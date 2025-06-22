@@ -19,6 +19,7 @@ local options = {
                     .. "TabWidth: 4, "
                     .. "UseTab: Never, "
                     .. "InsertNewlineAtEOF: true, "
+                    .. "AllowShortFunctionsOnASingleLine: false, "
                     .. "KeepEmptyLines: {"
                     .. "AtEndOfFile: true, "
                     .. "AtStartOfBlock: false, "
