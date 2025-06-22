@@ -2,8 +2,8 @@ local M = {}
 local term = require("nvchad.term")
 
 local runners = {
-    c = "cd %dir && clang -pedantic-errors -Wall -Wextra -std=c23 -o %name *.c && %dir/%name",
-    cpp = "cd %dir && clang++ -pedantic-errors -Wall -Wextra -std=c++23 -o %name *.cpp && %dir/%name",
+    c = "cd %dir && clang -pedantic-errors -Wall -Werror -Wextra -std=c23 -o %name *.c && %dir/%name",
+    cpp = "cd %dir && clang++ -pedantic-errors -Wall -Werror -Wextra -std=c++23 -o %name *.cpp && %dir/%name",
     go = "go run %file",
     python = "python3 -u %file",
 }
